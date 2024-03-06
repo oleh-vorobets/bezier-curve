@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KG-01</title>
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="content">
+            <canvas class="myCanvas" width="779" height="779"></canvas>
+            <div class="main">
+                <h1 class="size">Bezie curve</h1>
+                <input type="checkbox" class="checkbox-btn" />
+
+                <ul class="dots-list"></ul>
+                <button class="btn-build start-btn">Start!</button>
+                <button class="btn-build clear-btn">Clear!</button>
+                <div class="subtasks">
+                    <button class="subtask subtask-1">Subtask 1</button>
+                    <button class="subtask subtask-2">Subtask 2</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-window-1">
+            <input
+                type="number"
+                placeholder="nubmer of dots"
+                class="number-of-dots"
+            />
+            <div class="range">
+                <input
+                    type="number"
+                    placeholder="range1"
+                    min="-400"
+                    max="400"
+                    class="range1"
+                />
+                <input
+                    type="number"
+                    placeholder="range2"
+                    min="-400"
+                    max="400"
+                    class="range2"
+                />
+            </div>
+            <ul class="modal-dots-list"></ul>
+            <div class="func-btns">
+                <button class="find-btn-1">Find</button>
+                <button class="close-btn-1">Close</button>
+            </div>
+        </div>
+        <div class="modal-window-2">
+            <input type="number" placeholder="Row" class="select-row" />
+            <div class="diagonals">
+                <span class="diagonal">Sum of Diagonal elements: </span>
+                <span class="diagonal-value"></span>
+            </div>
+            <div class="diagonals">
+                <span class="adiagonal">Sum of ADiagonal elements: </span>
+                <span class="adiagonal-value"></span>
+            </div>
+            <ul class="row-matrix"></ul>
+            <div class="func-btns">
+                <button class="find-btn-2">Find</button>
+                <button class="close-btn-2">Close</button>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="./js/clearButton.js"></script>
+    <script type="module" src="./js/startButton.js"></script>
+    <script type="module" src="./js/getDots.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/matrixBezie.js"></script>
+</html>
